@@ -1,6 +1,6 @@
-from setuptools import setup
+from distutils.core import setup
+from setuptools import find_packages
+from spdk import __version__
 
-setup(
-    name='My First Setup File',
-    version='1.0',
-)
+
+setup(name='spdk', version=__version__, packages=find_packages())
